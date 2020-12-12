@@ -7,6 +7,8 @@ import Character from './components/Character'
 const AppDiv = styled.div `
 display:flex;
 flex-wrap:nowrap;
+flex-direction: column;
+align-items:center;
 `
 
 const App = () => {
@@ -34,7 +36,7 @@ const App = () => {
 
   return (
     <AppDiv className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Rick and Morty</h1>
       <Character characters={characters} />
     </AppDiv>
   );
