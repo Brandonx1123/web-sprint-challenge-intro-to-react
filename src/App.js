@@ -9,6 +9,12 @@ display:flex;
 flex-wrap:nowrap;
 flex-direction: column;
 align-items:center;
+
+.Header{
+  text-decoration: underline;
+  font-weight:bold;
+  font-size: 2.7rem;
+}
 `
 
 const App = () => {

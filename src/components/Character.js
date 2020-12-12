@@ -1,11 +1,11 @@
 // Write your Character component here
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled, {keyframes} from 'styled-components';
 
-const innercardDiv = styled.div `
-width:100%auto;
-`
+// const innercardDiv = styled.div `
+// width:100%auto;
+// `
 
 
 const CardBox = styled.div`
@@ -23,6 +23,10 @@ img{
     
 }
 
+h2{
+    text-decoration: underline;
+}
+
 p{
     text-align:center;
     font-size: .9rem;
@@ -37,6 +41,7 @@ width: 30%;
 border: 1px solid black;
 margin: 1% auto;
 background:wheat;
+box-shadow: 0px 1px 40px -2px mediumpurple;
 }
 
 `
@@ -59,6 +64,7 @@ function CharacterCard (props) {
         <p>{characterObj.gender}</p>
         <p>{characterObj.origin.name}</p>
         <p>{characterObj.status}</p>
+        <button onClick={characterObj.results}> Learn More </button>
       </innercardDiv>
         
       })}
